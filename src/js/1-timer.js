@@ -11,7 +11,7 @@ const inputEl = document.querySelector('input[type="text"]');
 const timerRefs = {
     days: document.querySelector("span[data-days]"),
     hours: document.querySelector("span[data-hours]"),
-    minutess: document.querySelector("span[data-minutes]"),
+    minutes: document.querySelector("span[data-minutes]"),
     seconds: document.querySelector("span[data-seconds]"),
 };
 
@@ -87,6 +87,6 @@ function updateTimer ({days, hours, minutes, seconds}) {
     console.log(timerRefs);
     timerRefs.days.textContent = pad(days);
     timerRefs.hours.textContent = pad(hours);
-    timerRefs.minutess.textContent = pad(minutes);
+    timerRefs.minutes.textContent = pad(minutes);
     timerRefs.seconds.textContent = pad(seconds);
 }
